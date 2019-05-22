@@ -139,13 +139,20 @@ public class Login extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
-         if(username.getText() == "admin"){
-            
+         if(username.getText().equals("admin")){
+            if(password.getText().equals("admin")){
+            this.dispose();
+            ho.setVisible(true);
+            }else{
+                JOptionPane.showMessageDialog(null,"login gagal !");
+                username.setText("");
+                password.setText("");
+            }
              }
-         else if(password.getText() == "admin"){
-         
-         }else{
-         ho.setVisible(true);
+          else{
+         JOptionPane.showMessageDialog(null,"login gagal !");
+                username.setText("");
+                password.setText("");
          }
     }//GEN-LAST:event_loginActionPerformed
 
