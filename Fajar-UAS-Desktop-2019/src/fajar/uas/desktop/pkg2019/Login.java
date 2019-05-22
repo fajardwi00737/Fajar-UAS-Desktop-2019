@@ -68,6 +68,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         jButton2.setText("Exit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -134,14 +139,19 @@ public class Login extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
-        if(username.getText()!= "admin"){
-            JOptionPane.showMessageDialog(null,"Login gagal !");
-        }else if(password.getText()!= "admin"){
-            JOptionPane.showMessageDialog(null,"Kolom Alamat tidak boleh kosong !");
-        }else{
-            ho.setVisible(true);
-    }
+         if(username.getText() == "admin"){
+            
+             }
+         else if(password.getText() == "admin"){
+         
+         }else{
+         ho.setVisible(true);
+         }
     }//GEN-LAST:event_loginActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

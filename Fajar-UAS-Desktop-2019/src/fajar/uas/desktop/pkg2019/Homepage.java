@@ -10,8 +10,7 @@ package fajar.uas.desktop.pkg2019;
  * @author petik
  */
 public class Homepage extends javax.swing.JFrame {
-InputTransaksi it = new InputTransaksi();
-Login l = new Login();
+
     /**
      * Creates new form Homepage
      */
@@ -75,7 +74,7 @@ Login l = new Login();
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -118,14 +117,14 @@ Login l = new Login();
         });
 
         jMenu3.setText("Input Transaksi");
+        jMenu3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenu3);
 
         jMenu4.setText("Logout");
-        jMenu4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu4ActionPerformed(evt);
-            }
-        });
         jMenu2.add(jMenu4);
 
         jMenuBar1.add(jMenu2);
@@ -148,16 +147,16 @@ Login l = new Login();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
-       l.setVisible(true);
+
     }//GEN-LAST:event_jMenu2ActionPerformed
 
     private void jMenu2MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu2MenuSelected
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu2MenuSelected
 
-    private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
-        it.setVisible(true);
-    }//GEN-LAST:event_jMenu4ActionPerformed
+    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,6 +189,8 @@ Login l = new Login();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Homepage().setVisible(true);
+                
+               
             }
         });
     }

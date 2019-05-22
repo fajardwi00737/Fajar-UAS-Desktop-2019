@@ -241,7 +241,7 @@ HasilTransaksi ht = new HasilTransaksi();
        
       
        
-       ht.barang1.setText();
+       ht.barang1.setText((String) barang.getSelectedItem());
        ht.tanggal1.setText(tanggal.getText());
        ht.harga1.setText(harga.getText());
        ht.jumlah1.setText(jumlah.getText());
