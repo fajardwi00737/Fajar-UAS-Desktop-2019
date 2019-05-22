@@ -182,15 +182,15 @@ HasilTransaksi ht = new HasilTransaksi();
 
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         if(barang.getSelectedItem() == null){
-            JOptionPane.showMessageDialog(null,"Kolom Nama tidak boleh kosong !");
+            JOptionPane.showMessageDialog(null,"Kolom Barang tidak boleh kosong !");
         }else if(tanggal.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Kolom Alamat tidak boleh kosong !");
+            JOptionPane.showMessageDialog(null,"Kolom Tanggal tidak boleh kosong !");
         }else if(harga.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Kolom Pass tidak boleh kosong !");
+            JOptionPane.showMessageDialog(null,"Kolom Harga tidak boleh kosong !");
         }else if(jumlah.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Kolom Pass tidak boleh kosong !");
+            JOptionPane.showMessageDialog(null,"Kolom Jumlah tidak boleh kosong !");
         }else if(total.getText().isEmpty()){
-            JOptionPane.showMessageDialog(null,"Kolom Pass tidak boleh kosong !");
+            JOptionPane.showMessageDialog(null,"Kolom total tidak boleh kosong !");
         }else{
        inputData();
        ht.setVisible(true);

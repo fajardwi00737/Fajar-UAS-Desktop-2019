@@ -141,7 +141,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
          if(username.getText().equals("admin")){
             if(password.getText().equals("admin")){
-            this.dispose();
+           
             ho.setVisible(true);
             }else{
                 JOptionPane.showMessageDialog(null,"login gagal !");

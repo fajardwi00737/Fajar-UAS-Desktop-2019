@@ -59,15 +59,15 @@ public class HasilTransaksi extends javax.swing.JFrame {
 
         jLabel6.setText("Total");
 
-        barang1.setText(" ");
+        barang1.setText("= ");
 
-        tanggal1.setText(" ");
+        tanggal1.setText("= ");
 
-        harga1.setText(" ");
+        harga1.setText("= ");
 
-        jumlah1.setText(" ");
+        jumlah1.setText("= ");
 
-        total1.setText(" ");
+        total1.setText("= ");
 
         jButton1.setText("Print");
 
